@@ -18,3 +18,13 @@ x <- seq(from = -5, to = 5,length.out = 1e3)
 y <- densidade_normal(x)
 lines(x,y, lwd = 2, col = "red")
 text(-2,0.3,expression(X[1]%~%N(0,1)), col = "red")
+
+x <- seq(from = -5, to = 5,length.out = 1e3)
+y <- densidade_normal(x, c(0,0.5))
+lines(x,y, lwd = 2, col = "purple")
+text(-2,0.45,expression(X[2]%~%N(0,0.64)), col = "purple")
+
+x <- seq(from = -5, to = 5,length.out = 1e3)
+y <- densidade_normal(x, c(2,1))
+lines(x,y, lwd = 2, col = "blue")
+text(3,0.5,expression(X[3]%~%N(2,1)), col = "blue")
